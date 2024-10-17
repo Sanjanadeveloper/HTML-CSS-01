@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+     body{
+       background: rgb(238,174,202);
+       background: radial-gradient(circle, rgba(255, 182, 193, 1), rgba(139, 0, 0, 1));
+       background-size: cover;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+   
+    
+    .box{
+        width: 400px;
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* border: 3px solid black; */
+        box-sizing: border-box;
+        /* text-align: center; */
+        margin: 0 auto;
+        height: 650px;
+        border-radius: 5px;
+        background-color: #dddbdb;
+    }
+    table{
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    td{
+        padding: 0px 5px 20px 10px;
+    }
+
+    .txt{
+        width: 300px;
+        height: 20px;
+        border-radius: px;
+        padding: auto;
+    }
+    .txtarea{
+        width: 300px;
+        height: 100px;
+        border-radius: px;
+        padding: auto;
+    }
+    .checkbox {
+        width: 20px; /* Width of the checkbox */
+        height: 20px; /* Height of the checkbox */
+        margin-right: 10px; /* Space between checkbox and label */
+    }
+    
+    .checkbox-label {
+        font-size: 16px; /* Font size of the label */
+    }
+    .btn{
+        width: 70px;
+        height: 30px;
+        background-color: #4CB050;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        
+    }
+    .btn:hover {
+        background-color: #0056b3; 
+    }
+
+</style>
+<body>
+    <h1>Feedback Form</h1>
+    <div class="box">
+       <table>
+        <form action="" method="">
+            <tr>
+                <td>
+                    <label><b>Feedback Type:</b></label>
+                    <br>
+                    <input type="text" name="Compliment" class="txt">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label><b>Message:</b></label>
+                    <br>
+                    <textarea class="txtarea"></textarea >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Website Rating:</b></label>
+                    <br>
+                    <input type="radio" name="rate" value="Excellent">Excellent
+                    <input type="radio" name="rate" value="Good">Good
+                    <input type="radio" name="rate" value="Average">Average
+                    <input type="radio" name="rate" value="Poor">Poor
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label><b>Age(10-100):</b></label>
+                    <br>
+                    <input type="number" name="Age" class="txt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Email:</b></label>
+                    <br>
+                    <input type="email" name="Email" class="txt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Password(min.8 characters):</b></label>
+                    <br>
+                    <input type="text" name="Password" class="txt">
+                </td>
+            </tr>    
+            <tr>
+                <td>
+                    <label><b>Website URL(optional):</b></label>
+                    <br>
+                    <input type="url" name="URL" class="txt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="agree" class="checkbox";>
+                    <label for="agree" class="checkbox-label">I agree to the terms and conditions</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn">Submit</button>
+                </td>
+            </tr>
+        </form>
+       </table>
+       
+    </div>
+
+</body>
+</html>
