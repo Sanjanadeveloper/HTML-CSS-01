@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #090B0E;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        /* box-shadow: white; */
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        z-index: 10;
+        background-color: black;
+    }
+    #left{
+        width: 15;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #left img{
+        width: 114px;
+        height: 40px;
+
+    }
+    #left > botton{
+        border: 1px solid transparent;
+        padding: 10px 15px;
+        background-color: transparent;
+        border-radius: 10px;
+        &:hover{
+            background-color: aliceblue;
+        }
+    }
+    .chat {
+        position: fixed;
+        bottom: 20px;
+        background-color: teal;
+        right: 10px;
+        padding: 10px;
+        bottom: 10px;
+    }
+  </style>
+  <body>
+    <nav>
+      <div id="left">
+        <img
+          src="./Screenshot 2024-10-18 175119.png"
+          alt="umso logo"
+        />
+      </div>
+      <div id="right">
+        <p>Pricing</p>
+        <p>Features</p>
+        <p>Showcase</p>
+        <button>Login</button>
+        <button>Sign Up</button>
+      </div>
+      <p></p>
+    </nav>
+  </body>
+</html>

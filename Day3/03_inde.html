@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px 0px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+      }
+      #left {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      #right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+      }
+      #left img {
+        width: 114px;
+        height: 40px;
+      }
+
+      #left > select {
+        padding: 10px 15px;
+        background-color: #d6e2fa;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+      }
+
+      #right > p:hover {
+        color: #ed0331;
+        cursor: pointer;
+      }
+
+      #right > button {
+        border: 1px solid #ed0331;
+        padding: 10px 15px;
+        background-color: transparent;
+        border-radius: 15px;
+        &:hover {
+          background-color: rgb(214, 192, 192);
+        }
+      }
+      .chat {
+        position: fixed;
+        bottom: 20px;
+        background-color: teal;
+        right: 10px;
+        padding: 10px;
+        bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="left">
+        <img
+          src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp"
+          alt="masai-logo" />
+        <select>
+          <option value="">Courses</option>
+        </select>
+      </div>
+      <div id="right">
+        <p>Scholarships</p>
+        <p>Success Stories</p>
+        <p>Events</p>
+        <p>Hire From us</p>
+        <p>Fees</p>
+        <button>Register</button>
+      </div>
+    </nav>
+</body>    
