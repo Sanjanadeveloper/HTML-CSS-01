@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Project</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #B43A87;
+        }
+        h2 {
+            margin-bottom: 50px; /* Space between h2 and boxes */
+        }
+        .container {
+            display: flex;
+            justify-content: space-around; 
+            width: 100%;
+            max-width: 800px; 
+            border-width: 3px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            transition: opacity 0.3s ease;
+            border-width: 4px;
+            border-style: solid;
+            /* border-color: aliceblue; */
+        }
+        .box1 {
+            background-color: #FDFC9D;
+            margin-right: 20px; 
+            border-color: beige;
+        } 
+        .box2 {
+            background-color: #FBC7FC;
+            margin-right: 20px; 
+            border-color: aliceblue;
+        }
+        .box3 {
+            background-color: #FB4747;
+            margin-right: 20px;
+            border-color: rgb(212, 113, 113);
+        }
+        .box4 {
+            background-color: #008A00;
+            border-color: rgb(146, 211, 48);
+            
+        }
+        /* Fade effect on hover */
+        .box:hover {
+            opacity: 1; /* Full opacity on hover */
+        }
+        .box:hover ~ .box,
+        .box:not(:hover) {
+            opacity: 0.5; /* Fade other boxes */
+        }
+    </style>
+</head>
+<body>
+    <h2>CARDS</h2>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
