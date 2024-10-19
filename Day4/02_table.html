@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        tr:nth-child(3n) td {
+            font-weight: bold;
+            color: green;
+        }
+        
+        tr:nth-child(4n + 1) td {
+            font-style: italic;
+            font-size: 30px;
+        }
+        
+        tr:last-child {
+            background-color: yellow;
+        }
+        thead{
+            font-family: italic;
+            font-size: 30px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th><b><i>Product Name</i></b></th>
+                <th><b><i>Quantity</i></b></th>
+                <th><b><i>Price</i></b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>product1</td>
+                <td>1</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product2</td>
+                <td>2</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product3</td>
+                <td>3</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product4</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product5</td>
+                <td>5</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product6</td>
+                <td>6</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product7</td>
+                <td>7</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product8</td>
+                <td>8</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product9</td>
+                <td>9</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>product10</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sum</td>
+                <!-- <td>55</td> -->
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
